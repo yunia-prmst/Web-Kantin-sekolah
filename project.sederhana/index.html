@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kasir Kantin Sekolah</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <div class="container">
+
+        <header>
+            <h1>KASIR KANTIN SEKOLAH</h1>
+            <p>Selamat datang di kantin sekolah!</p>
+        </header>
+
+        <div class="card">
+            <h2>Daftar Menu</h2>
+
+            <table>
+                <tr>
+                    <th>No</th>
+                    <th>Menu</th>
+                    <th>Harga</th>
+                    <th>Jumlah</th>
+                </tr>
+
+                <tr>
+                    <td>1</td>
+                    <td>Nasi Goreng</td>
+                    <td>Rp15.000</td>
+                    <td>
+                        <input type="number" id="nasi" min="0" value="0">
+                    </td>
+                </tr>
+
+                <tr>
+                    <td>2</td>
+                    <td>Kebab</td>
+                    <td>Rp12.000</td>
+                    <td>
+                        <input type="number" id="kebab" min="0" value="0">
+                    </td>
+                </tr>
+
+                <tr>
+                    <td>3</td>
+                    <td>Ayam Geprek</td>
+                    <td>Rp12.000</td>
+                    <td>
+                        <input type="number" id="ayam" min="0" value="0">
+                    </td>
+                </tr>
+
+                <tr>
+                    <td>4</td>
+                    <td>Sosis Bakar</td>
+                    <td>Rp10.000</td>
+                    <td>
+                        <input type="number" id="sosis" min="0" value="0">
+                    </td>
+                </tr>
+
+                <tr>
+                    <td>5</td>
+                    <td>Mie Goreng</td>
+                    <td>Rp8.000</td>
+                    <td>
+                        <input type="number" id="mie" min="0" value="0">
+                    </td>
+                </tr>
+            </table>
+
+            <button onclick="hitungtotal()">Hitung Total</button>
+
+            <h2 id="hasil">Total: Rp0</h2>
+        </div>
+
+        <div class="card" id="ringkasan">
+            <h2>Data Pesanan</h2>
+            <p>Nama pelanggan: <span id="hasilNama">-</span></p>
+            <p>pesanan:</p>
+            <ul id="daftarPesanan">
+                <li>Belum ada pesanan</li>
+            </ul>
+            <h2 id="hasil">Total pesanan: Rp0</h2>
+        </div>
+
+            <label for="nama">Nama Pelanggan</label>
+            <input
+                type="text"
+                id="nama"
+                placeholder="Masukkan nama pelanggan"
+            >
+        </div>
+
+    </div>
+
+    <script src="script.js"></script>
+
+</body>
+</html>
